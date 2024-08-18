@@ -4,31 +4,17 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
+    <div className="flex-col flex border-[#66c87b] w-96 rounded-lg p-9 border-2 gap-5 m-auto ">
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <img src="/autocomplete.png" />
       </div>
-      <h1 className="bg-orange-200">Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      <input placeholder="Enter your UPI id "></input>
+      <hr />
+      <button className=" bg-[#66c87b] font-semibold text-white p-2 w-full">
+        Play Now
+      </button>
+    </div>
   );
 }
 
