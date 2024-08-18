@@ -1,50 +1,17 @@
-# React + TypeScript + Vite
+Build an Autocomplete using React.js | Type One | Frontend Coding Challenge | JavaScript Interview Question
+react logo
+React
+Intermediate
+5428
+@Yomesh Gupta
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+In this coding challenge, you need to build an autocomplete that will act as a payment page where users can enter their UPI. The autocomplete form should suggest possible UPI handles based on the user input.
 
-Currently, two official plugins are available:
+Functional Spec:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Based on the user input, you need to show the best-matched list of UPI handles.
+There should be an inline suggestion of the best matched UPI handle.
+The user should be able to select from the list by clicking on a list item or using the keyboard.
+If a best-matched suggestion is visible inline and the user clicks on the right arrow, the suggestion should be auto-filled.
+You need to handle different edge cases.
+Feel free to add any other functionality you think would be useful for the end user.
