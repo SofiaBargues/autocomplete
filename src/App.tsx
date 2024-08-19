@@ -12,7 +12,7 @@ function App() {
     console.log(word);
   }
 
-  const filteredWords = words.filter((string) => string.includes(word));
+  const filteredWords = words.filter((string) => string.startsWith(word));
 
   return (
     <form className="flex-col flex border-[#66c87b] w-96 rounded-lg p-9 border-2 gap-5 m-auto ">
