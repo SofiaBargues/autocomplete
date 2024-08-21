@@ -71,7 +71,7 @@ function App() {
           ))}
         </div>
 
-        <button className="mt-6 bg-[#66c87b] font-semibold z-10 text-white p-2 w-full rounded-xl">
+        <button className="mt-6 bg-[#66c87b] font-semibold z-10 text-white p-3 w-full rounded-xl">
           Pay Now
         </button>
       </div>
