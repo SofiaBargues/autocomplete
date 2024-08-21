@@ -32,12 +32,18 @@ function App() {
         <input
           value={word}
           onChange={onChange}
+          onKeyDownCapture={(e) => {
+            if (e.key == "Tab" && filteredWords[0]) {
+              e.preventDefault();
+              setWord(filteredWords[0]);
+            }
+          }}
           className="inline-block absolute bg-transparent outline-none"
           placeholder="Enter your UPI id"
         ></input>
         <input
           value={word && filteredWords[0] ? filteredWords[0] : ""}
-          onChange={onChange}
+          // onChange={onChange}
           className="inline-block text-gray-400"
         ></input>
       </div>
