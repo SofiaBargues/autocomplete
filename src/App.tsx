@@ -14,7 +14,7 @@ const words = [
 function App() {
   const [word, setWord] = useState("");
   const [dropDown, setDropDown] = useState(false);
-  function onChange(e) {
+  function onChange(e: React.ChangeEvent<HTMLInputElement>) {
     setWord(e.target.value);
     setDropDown(true);
   }
