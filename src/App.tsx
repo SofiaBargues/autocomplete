@@ -24,11 +24,11 @@ function App() {
   const filteredWords = words.filter((string) => string.startsWith(word));
 
   return (
-    <form className="flex-col flex relative border-[#66c87b] w-96 rounded-lg p-9 border-2 m-auto ">
+    <form className="flex-col flex relative border-[#66c87b] w-96 rounded-lg p-9 border-2 m-auto gap-5">
       <div>
         <img src="/autocomplete.png" />
       </div>
-      <div className="relative">
+      <div className="relative text-left">
         <input
           value={word}
           onChange={onChange}
@@ -47,8 +47,8 @@ function App() {
           className="inline-block text-gray-400"
         ></input>
       </div>
-      <hr />
       <div className="relative">
+        <hr />
         <div
           className={
             "absolute" +
@@ -71,7 +71,7 @@ function App() {
           ))}
         </div>
 
-        <button className=" bg-[#66c87b] font-semibold z-10 text-white p-2 w-full">
+        <button className="mt-6 bg-[#66c87b] font-semibold z-10 text-white p-2 w-full rounded-xl">
           Pay Now
         </button>
       </div>
